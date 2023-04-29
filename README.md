@@ -10,3 +10,23 @@ This cheat sheet contains 50 commonly used git commands.
 </br>
 
 ![Git Cheat Sheet](./git-cheat-sheet.png)
+</br>
+
+## 📔 Git Commands Tutorial
+* **Setup** </br>
+  Set the name and email that will be attached to your commits and tags </br>
+  ```
+  $ git config --global user.name "Danny Adams"
+  $ git config --global user.email "myemail@gmail.com"
+  ```
+   </br>
+* **Starting a Project with Git** </br>
+  Create a local repo (omit <directory> to initialise the current directory as a git repo) </br>
+  ```
+  $ git init <directory>
+  ```
+  Or download existed repo </br>
+  ```
+  $ git clone <url>
+  ```
+
