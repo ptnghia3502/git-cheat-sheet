@@ -118,7 +118,7 @@ This cheat sheet contains 50 commonly used git commands.
     </br>
     
   * **Merging** </br>
-    Merge branch a into branch b. Add --no-ff option for no-fast-forward merge </br>
+    Merge branch a into branch b. Add `--no-ff` option for no-fast-forward merge </br>
     ```
     $ git checkout b
     $ git merge a
@@ -128,3 +128,36 @@ This cheat sheet contains 50 commonly used git commands.
     $ git merge --squash a
     ```
     </br>
+
+* ### Another Commands
+  * **Undoing Things** </br>
+    Move (&/or rename) a file & stage move </br>
+    ```
+    $ git mv <existing_path> <new_path>
+    ```
+    Remove a file from working directory & staging area, then stage the removal </br>
+    ```
+    $ git rm <file>
+    ```
+    View a previous commit (READ only) </br>
+    ```
+    $ git checkout <commit_ID>
+    ```
+    Create a new commit, reverting the changes from a specified commit </br>
+    ```
+    $ git revert <commit_ID>
+    ```
+    Go back to a previous commit & delete all commits ahead of it (revert is safer). Add `--hard` flag to also delete workspace changes (BE VERY CAREFUL) </br>
+    ```
+    $ git reset <commit_ID>
+    ```
+  * **Review your Repo** </br>
+    List new or modified files not yet committed </br>
+    ```
+    $ git status
+    ```
+    Show changes between two commits </br>
+    ```
+    $ git diff <commit1_ID> <commit2_ID>
+    ```
+    
