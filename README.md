@@ -25,7 +25,7 @@ This cheat sheet contains 50 commonly used git commands.
     ```
   
   * **Setup** </br>
-    Set the name and email that will be attached to your commits and tags </br>
+    Set the name and email that will be attached to your commits and tags (change for suitable with your account) </br>
     ```
     $ git config --global user.name "ptnghia3502"
     $ git config --global user.email "ptnghia3502@gmail.com"
@@ -151,6 +151,8 @@ This cheat sheet contains 50 commonly used git commands.
     ```
     $ git reset <commit_ID>
     ```
+    </br>
+    
   * **Review your Repo** </br>
     List new or modified files not yet committed </br>
     ```
@@ -160,4 +162,43 @@ This cheat sheet contains 50 commonly used git commands.
     ```
     $ git diff <commit1_ID> <commit2_ID>
     ```
-    
+    </br>
+
+  * **Synchronizing** </br>
+    Add a remote repo </br>
+    ```
+    $ git remote add <alias> <url>
+    ```
+    View all remote connections. Add `-v` flag to view urls. </br>
+    ```
+    $ git remote
+    ```
+    Remove a connection </br>
+    ```
+    $ git remote remove <alias>
+    ```
+    Rename a connection </br>
+    ```
+    $ git remote rename <old> <new>
+    ```
+    Fetch all branches from remote repo (no merge) </br>
+    ```
+    $ git fetch <alias>
+    ```
+    Fetch a specific branch </br>
+    ```
+    $ git fetch <alias> <branch>
+    ```
+    Fetch the remote repo's copy of the current branch, then merge </br>
+    ```
+    $ git pull
+    ```
+    Upload local content to remote repo </br>
+    ```
+    $ git push <alias>
+    ```
+    Upload to a branch (can then pull request) </br>
+    ```
+    $ git push <alias> <branch>
+    ```
+    </br>
