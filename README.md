@@ -16,8 +16,8 @@ This cheat sheet contains 50 commonly used git commands.
 * ### Setup Git and first commit to repo
   * **Download/Install** </br>
     Download Git from this link: [Git - Downloads](https://git-scm.com/downloads) </br>
-    After the file is downloaded, install it in the system </br>
-    Once installed, select Launch the Git Bash, then click on finish. Or right-click somewhere on desktop and choose Git Bash Here </br>
+    After the file is downloaded, install it in the system. </br>
+    Once installed, select Launch the Git Bash, then click on finish. Or right-click somewhere on desktop and choose Git Bash Here. </br>
     The Git Bash Console will be launched. </br>
     To check Git is installed or not, or check version, use this command:
     ```
@@ -27,8 +27,8 @@ This cheat sheet contains 50 commonly used git commands.
   * **Setup** </br>
     Set the name and email that will be attached to your commits and tags </br>
     ```
-    $ git config --global user.name "Danny Adams"
-    $ git config --global user.email "myemail@gmail.com"
+    $ git config --global user.name "ptnghia3502"
+    $ git config --global user.email "ptnghia3502@gmail.com"
     ```
     </br>
    
@@ -54,6 +54,39 @@ This cheat sheet contains 50 commonly used git commands.
     $ git commit -m "commit message"
     ```
     </br>
+    
+  * **Push to repo** </br>
+    If you create a local repo, you need to create new reposioty on your GitHub </br>
+    On your GitHub profile, choose Repositories, click New, set name and description for your repo, then Create Repository </br>
+    Get the HTTPS URL of your repo (Example: `https://github.com/ptnghia3502/example.git`) </br>
+    Remote your local repo to repo on Github and push your content: </br>
+    ```
+    $ git remote add origin <url>
+    $ git push -u orgin master
+    ```
+    If you clone repo from somewhere, just use `git push`, it will auto push to repo where you clone from.
+    ```
+    $ git push
+    ```
+    </br>
+    
+  * **Quick Tip from GitHub** </br>
+    When you create new repository on GitHub, it will show fast command line </br>
+    Or create a new repository on the command line: </br>
+    ```
+    $ git init
+    $ git add .
+    $ git commit -m "first commit"
+    $ git branch -M master
+    $ git remote add origin <url>
+    $ git push -u origin master
+    ```
+    Or push an existing repository from the command line: </br>
+    ```
+    $ git remote add origin <url>
+    $ git branch -M master
+    $ git push -u origin master
+    ```
 
 * ### Merge branche
   * **Branches** </br>
