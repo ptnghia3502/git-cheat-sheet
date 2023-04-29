@@ -202,3 +202,5 @@ This cheat sheet contains 50 commonly used git commands.
     $ git push <alias> <branch>
     ```
     </br>
+## ✔️ Thanks for reading
+Hope this cheat sheet is useful!
