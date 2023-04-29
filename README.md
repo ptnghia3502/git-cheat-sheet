@@ -88,7 +88,7 @@ This cheat sheet contains 50 commonly used git commands.
     $ git push -u origin master
     ```
 
-* ### Merge branche
+* ### Create and merge branche
   * **Branches** </br>
     List all local branches. Add `-r` flag to show all remote branches, `-a` flag for all branches </br>
     ```
@@ -114,5 +114,17 @@ This cheat sheet contains 50 commonly used git commands.
     Add a tag to current commit (often used for new version releases) </br>
     ```
     $ git tag <tag-name>
+    ```
+    </br>
+    
+  * **Merging** </br>
+    Merge branch a into branch b. Add --no-ff option for no-fast-forward merge </br>
+    ```
+    $ git checkout b
+    $ git merge a
+    ```
+    Merge & squash all commits into one new commit </br>
+    ```
+    $ git merge --squash a
     ```
     </br>
